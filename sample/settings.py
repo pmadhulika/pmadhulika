@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-08#3e2zdrak#c4ml@@_vjbni&vojw*!nr6mry9y2pk8xeo#4gy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -79,12 +79,13 @@ WSGI_APPLICATION = 'sample.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'madhu',
-        'USER':'postgres',
-        'PASSWORD':'1234',
-        'HOST':'localhost'
+        'NAME':'blog_db_j953',
+        'USER':'blog_db_j953_user',
+        'PASSWORD':'blmPeijgdF2gE4qdb1Z2b5ZMtBb36YOY',
+        'HOST':'dpg-cptcot5ds78s73bluj80-a.oregon-postgres.render.com'
     }
 }
+
 
 
 # Password validation
