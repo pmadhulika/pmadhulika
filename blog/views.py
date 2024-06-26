@@ -38,7 +38,7 @@ def register(request):
 			return redirect('login')
 	else:
 		form = UserRegisterForm()
-	return render(request, 'register.html', {'form': form, 'title':'register here'})
+	return render(request, 'Register.html', {'form': form, 'title':'register here'})
 
 ################ login forms################################################### 
 def login(request):
@@ -56,7 +56,7 @@ def login(request):
 		else:
 			messages.info(request, f'account done not exit plz sign in')
 	form = AuthenticationForm()
-	return render(request, 'login.html', {'form':form, 'title':'log in'})
+	return render(request, 'Login.html', {'form':form, 'title':'log in'})
 
 
 def safe(request):
